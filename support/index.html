@@ -8,6 +8,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <div class="page">
+  <div class="lang-toggle">
+    <a href="/support/" class="active">한국어</a>
+    <a href="/support/en/">English</a>
+  </div>
+
   <header class="doc-head">
     <a href="/" class="brand"><span class="dot"></span> 포루틴 · Forutin</a>
     <h1 class="doc-title">지원</h1>
@@ -20,14 +25,28 @@
   <nav class="toc" aria-label="목차">
     <div class="toc-label">목차</div>
     <ol>
-      <li><a href="#s1"><span class="num">1</span> 문의하기</a></li>
-      <li><a href="#s2"><span class="num">2</span> 자주 묻는 질문</a></li>
-      <li><a href="#s3"><span class="num">3</span> 법적 정보</a></li>
+      <li><a href="#s1"><span class="num">1</span> 포루틴이란</a></li>
+      <li><a href="#s2"><span class="num">2</span> 문의하기</a></li>
+      <li><a href="#s3"><span class="num">3</span> 자주 묻는 질문</a></li>
+      <li><a href="#s4"><span class="num">4</span> 법적 정보</a></li>
     </ol>
   </nav>
 
   <section class="art" id="s1">
-    <h2 class="art-title"><span class="art-no">1</span>문의하기</h2>
+    <h2 class="art-title"><span class="art-no">1</span>포루틴이란</h2>
+    <p>매일 챙겨야 할 비타민과 영양제를 등록하고, 복용 시간을 알림으로 관리해 주는 앱입니다.
+    복잡한 가입 없이 Apple·Google 소셜 로그인으로 바로 시작하실 수 있습니다.</p>
+    <ul>
+      <li>복용 알림 · 스케줄 관리</li>
+      <li>영양제 등록 · 재고 추적</li>
+      <li>복용 기록 통계</li>
+      <li>영양소 섭취 분석 (KDRIs 2025 기준)</li>
+      <li>AI 맞춤 루틴 분석 (Plus)</li>
+    </ul>
+  </section>
+
+  <section class="art" id="s2">
+    <h2 class="art-title"><span class="art-no">2</span>문의하기</h2>
     <div class="notice">
       <p><strong>이메일</strong> · <a href="mailto:contact@routiner.app">contact@routiner.app</a></p>
     </div>
@@ -41,12 +60,17 @@
     </ul>
   </section>
 
-  <section class="art" id="s2">
-    <h2 class="art-title"><span class="art-no">2</span>자주 묻는 질문</h2>
+  <section class="art" id="s3">
+    <h2 class="art-title"><span class="art-no">3</span>자주 묻는 질문</h2>
 
     <h3 class="sub">로그인이 안 돼요.</h3>
     <p>포루틴은 Apple 및 Google 소셜 로그인만 지원합니다. 애플 계정·구글 계정에 문제가 있는지 먼저
     확인해 주세요. 계속해서 로그인이 되지 않으면 이메일로 알려 주시면 도와드리겠습니다.</p>
+
+    <h3 class="sub">비타민이 검색되지 않아요.</h3>
+    <p>식약처 등록 제품을 기준으로 검색됩니다. 검색 결과가 없거나 원하시는 제품이 없을 경우,
+    직접 입력 기능으로 등록하실 수 있습니다. 정확한 성분·용량 정보를 입력하시면 통계·분석 기능에서
+    활용됩니다.</p>
 
     <h3 class="sub">알림이 오지 않아요.</h3>
     <p>iOS 설정 → 알림 → 포루틴 에서 알림이 허용되어 있는지, 앱 안에서 알림 설정이 켜져 있는지
@@ -65,13 +89,19 @@
     <p>앱 안 <strong>내 정보 → 회원 탈퇴</strong> 에서 직접 진행하실 수 있습니다.
     탈퇴 시 등록하신 영양제 목록·복용 기록·설정은 모두 즉시 삭제됩니다.</p>
 
+    <h3 class="sub">탈퇴하면 Apple/Google 로그인 연동은 어떻게 되나요?</h3>
+    <p>탈퇴 시 Apple/Google 로그인 연동 해제(토큰 무효화)를 자동으로 요청합니다.
+    외부 서비스 장애 등으로 요청이 실패할 경우에도 회원 데이터 삭제는 그대로 진행됩니다.
+    연동 상태를 직접 확인하시려면 기기의 설정에서 확인하실 수 있습니다
+    (iOS: 설정 → Apple ID → 로그인 방식).</p>
+
     <h3 class="sub">AI 분석 결과를 어디까지 신뢰해야 하나요?</h3>
     <p>AI 분석은 참고 정보이며, 의료행위·진단·처방을 대체하지 않습니다. 건강 상태·약물 상호작용·부작용
     등에 대한 판단은 반드시 의사 또는 약사와 상담하시기 바랍니다.</p>
   </section>
 
-  <section class="art" id="s3">
-    <h2 class="art-title"><span class="art-no">3</span>법적 정보</h2>
+  <section class="art" id="s4">
+    <h2 class="art-title"><span class="art-no">4</span>법적 정보</h2>
     <ul>
       <li><a href="/privacy/">개인정보처리방침</a></li>
       <li><a href="/terms/">이용약관</a></li>
@@ -81,6 +111,7 @@
   <footer class="doc-foot">
     포루틴 · Forutin — 지원<br>
     <a href="/">홈</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a> ·
+    <a href="/support/en/">English</a> ·
     <a href="mailto:contact@routiner.app">contact@routiner.app</a>
   </footer>
 </div>
