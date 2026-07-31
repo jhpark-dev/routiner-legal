@@ -17,7 +17,7 @@
     <a href="/" class="brand"><span class="dot"></span> 포루틴 · Forutin</a>
     <h1 class="doc-title">개인정보처리방침</h1>
     <div class="doc-meta">
-      <strong>시행일</strong> 2026년 7월 8일 · <strong>최초 시행일</strong> 2026년 7월 8일<br>
+      <strong>시행일</strong> 2026년 8월 1일 · <strong>최초 시행일</strong> 2026년 7월 8일<br>
       포루틴(이하 &ldquo;서비스&rdquo;)은 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등
       관련 법령을 준수합니다.
     </div>
@@ -63,8 +63,10 @@
       <li><strong>회원 관리</strong> — Apple/Google 소셜 로그인을 통한 회원 식별, 가입 및 탈퇴 처리, 계정 보안</li>
       <li><strong>서비스 제공</strong> — 비타민·영양제 복용 관리, 복용 리마인더 알림, 재고 관리 기능 제공</li>
       <li><strong>유료 구독 결제·환불</strong> — Plus 구독의 결제 상태 확인, 갱신·해지·환불 처리</li>
-      <li><strong>AI 비교분석 서비스</strong> — 이용자가 요청한 제품·복용 정보에 대한 AI 기반 비교분석 결과 제공</li>
-      <li><strong>서비스 개선 및 통계</strong> — 기능 개선, 오류 분석, 이용 통계 산출(개인을 식별하지 않는 형태)</li>
+      <li><strong>AI 맞춤 루틴 분석</strong> — 이용자가 등록한 영양제 정보를 바탕으로 복용 시간·조합에 대한 AI 분석 결과 제공</li>
+      <li><strong>광고 게재</strong> — 무료 이용자에게 앱 내 광고(배너·리워드)를 표시하고, 이용자가 앱 추적을 허용한 경우 맞춤형 광고를 제공</li>
+      <li><strong>게시판 운영</strong> — 문의·건의 게시글 등록 및 답변 처리</li>
+      <li><strong>서비스 개선 및 통계</strong> — 기능 개선, 오류 분석, 이용 통계 산출. 이 과정에서 수집되는 앱 이용 기록은 이용자 계정과 연결된 상태로 저장·분석됩니다.</li>
       <li><strong>고객 문의 대응</strong> — 문의·불만 처리 및 결과 회신</li>
     </ul>
   </section>
@@ -79,24 +81,40 @@
         <tbody>
           <tr>
             <td>필수 항목</td>
-            <td>이메일 주소, 소셜 로그인 식별자(Apple/Google)</td>
+            <td>이메일 주소, 소셜 로그인 식별자(Apple/Google), 소셜 계정이 제공하는 이름</td>
             <td>소셜 로그인 시 이용자 동의 하에 제공</td>
           </tr>
           <tr>
+            <td>필수 항목 (가입 직후)</td>
+            <td>닉네임, 연령대, 성별, 만 14세 이상 여부</td>
+            <td>온보딩 화면에서 이용자가 직접 입력</td>
+          </tr>
+          <tr>
+            <td>선택 항목</td>
+            <td>마케팅 정보 수신 동의 여부</td>
+            <td>가입 시 이용자 선택</td>
+          </tr>
+          <tr>
             <td>서비스 이용 중 생성</td>
-            <td>등록한 비타민·영양제 정보, 복용 기록, 재고 정보, 알림 설정, 구독 상태</td>
+            <td>등록한 비타민·영양제 정보, 복용 기록, 재고 정보, 알림 설정, 구독 상태, 게시글·댓글, 앱 이용 이벤트 기록(화면 진입·기능 사용·구독 전환 등)</td>
             <td>이용자의 서비스 이용 과정에서 입력·생성</td>
           </tr>
           <tr>
             <td>자동 수집</td>
-            <td>접속 로그, 오류 로그, 기기 식별자, OS 버전, 앱 버전</td>
+            <td>접속 로그, 오류 로그, 기기 식별자, 푸시 알림 토큰, OS 버전, 앱 버전</td>
             <td>서비스 이용 시 자동 생성·수집</td>
+          </tr>
+          <tr>
+            <td>광고 관련 자동 수집</td>
+            <td>광고 식별자(IDFA), 기기·네트워크 정보, 광고 노출·클릭 기록</td>
+            <td>이용자가 앱 추적을 허용한 경우 광고 SDK(Google AdMob)를 통해 수집 (제9항 참조)</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>운영자는 이용자의 이름, 전화번호, 주소, 결제 카드번호 등의 정보를 직접 수집하지 않습니다.
-    결제 정보는 Apple App Store 및 Google Play의 결제 시스템을 통해서만 처리되며,
+    <p>위 항목은 이용자 계정과 연결된 상태로 처리됩니다.
+    운영자는 이용자의 전화번호, 주소, 결제 카드번호를 수집하지 않습니다.
+    결제는 Apple App Store 의 인앱 결제 시스템을 통해서만 처리되며,
     운영자는 카드번호 등 민감한 결제 수단 정보에 접근하지 않습니다.</p>
   </section>
 
@@ -137,9 +155,14 @@
         <thead><tr><th>제공받는 자</th><th>제공 목적</th><th>제공 항목</th></tr></thead>
         <tbody>
           <tr>
-            <td>Apple Inc. / Google LLC</td>
+            <td>Apple Inc.</td>
             <td>인앱 구독(IAP) 결제 검증 및 구독 상태 확인</td>
             <td>구독 영수증, 거래 식별자</td>
+          </tr>
+          <tr>
+            <td>Google LLC</td>
+            <td>앱 내 광고(Google AdMob) 게재 및 성과 측정</td>
+            <td>광고 식별자(IDFA, 이용자가 추적을 허용한 경우), 기기·네트워크 정보, 광고 노출·클릭 기록</td>
           </tr>
         </tbody>
       </table>
@@ -154,32 +177,39 @@
       <table>
         <thead><tr><th>수탁자</th><th>위탁 업무</th><th>처리 항목</th></tr></thead>
         <tbody>
-          <tr><td>OpenAI, L.L.C. (미국)</td><td>AI 비교분석 요청 처리</td><td>제품명·성분·시간대 등 분석 요청 정보</td></tr>
-          <tr><td>Anthropic PBC (미국)</td><td>AI 비교분석 요청 처리</td><td>제품명·성분·시간대 등 분석 요청 정보</td></tr>
-          <tr><td>클라우드 인프라 제공자 (해외, 해당 시)</td><td>서버 운영 및 데이터 저장</td><td>서비스 이용 데이터, 계정 식별 정보</td></tr>
-          <tr><td>Apple APNs / Google Firebase (해당 시)</td><td>푸시 알림(복용 리마인더) 발송</td><td>기기 푸시 토큰</td></tr>
+          <tr><td>Anthropic PBC (미국)</td><td>AI 맞춤 루틴 분석 요청 처리</td><td>영양제명·성분·복용 시간대 등 분석 요청 정보</td></tr>
+          <tr><td>Google LLC (미국)</td><td>앱 내 광고 게재 및 성과 측정(Google AdMob)</td><td>광고 식별자, 기기·네트워크 정보</td></tr>
+          <tr><td>Google LLC (미국)</td><td>푸시 알림(복용 리마인더) 발송 — Firebase Cloud Messaging</td><td>기기 푸시 토큰</td></tr>
+          <tr><td>Apple Inc. (미국)</td><td>푸시 알림(복용 리마인더) 발송 — APNs</td><td>기기 푸시 토큰</td></tr>
+          <tr><td>네이버클라우드 주식회사 (대한민국)</td><td>서버 운영 및 데이터 저장</td><td>서비스 이용 데이터, 계정 식별 정보</td></tr>
         </tbody>
       </table>
     </div>
-    <p>AI 비교분석 요청 시 운영자는 개인을 직접 식별할 수 있는 정보(이메일 등)를 함께 전송하지 않으며,
-    분석에 필요한 최소한의 제품·복용 정보만을 전송합니다.</p>
+    <p>운영자는 Firebase Analytics 등 별도의 사용자 행동 분석 SDK 를 사용하지 않으며,
+    Firebase 는 푸시 알림 발송 목적으로만 이용합니다.</p>
+    <p>AI 분석 요청 시 운영자는 개인을 직접 식별할 수 있는 정보(이메일·이름 등)를 함께 전송하지 않으며,
+    분석에 필요한 최소한의 영양제·복용 정보만을 전송합니다.</p>
   </section>
 
   <section class="art" id="s7">
     <h2 class="art-title"><span class="art-no">7</span>개인정보의 국외 이전</h2>
-    <p>운영자는 AI 비교분석 및 인프라 운영을 위해 아래와 같이 개인정보를 국외로 이전합니다.
-    이용자는 국외 이전을 거부할 수 있으며, 거부 시 해당 기능(AI 비교분석 등)의 이용이 제한될 수 있습니다.
-    거부를 원하시는 경우 <a href="mailto:contact@routiner.app">contact@routiner.app</a>으로 요청하시기 바랍니다.</p>
+    <p>운영자는 AI 맞춤 루틴 분석, 앱 내 광고 게재, 푸시 알림 발송을 위해 아래와 같이 개인정보를 국외로 이전합니다.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>이전받는 자</th><th>국가</th><th>이전 항목</th><th>이전 목적</th><th>이전 방법·시점</th><th>보유 기간</th></tr></thead>
         <tbody>
-          <tr><td>OpenAI, L.L.C.</td><td>미국</td><td>제품·복용 관련 분석 요청 정보</td><td>AI 비교분석 결과 생성</td><td>기능 이용 시 네트워크를 통한 전송</td><td>처리 완료 후 즉시 또는 수탁자 정책에 따름</td></tr>
-          <tr><td>Anthropic PBC</td><td>미국</td><td>제품·복용 관련 분석 요청 정보</td><td>AI 비교분석 결과 생성</td><td>기능 이용 시 네트워크를 통한 전송</td><td>처리 완료 후 즉시 또는 수탁자 정책에 따름</td></tr>
-          <tr><td>클라우드 인프라 제공자 (해당 시)</td><td>해외</td><td>서비스 이용 데이터</td><td>서버 운영·데이터 저장</td><td>서비스 이용 시 상시</td><td>회원 탈퇴 또는 위탁 종료 시까지</td></tr>
+          <tr><td>Anthropic PBC</td><td>미국</td><td>영양제·복용 관련 분석 요청 정보</td><td>AI 맞춤 루틴 분석 결과 생성</td><td>기능 이용 시 네트워크를 통한 전송</td><td>처리 완료 후 즉시 또는 수탁자 정책에 따름</td></tr>
+          <tr><td>Google LLC</td><td>미국</td><td>광고 식별자, 기기·네트워크 정보, 광고 노출·클릭 기록</td><td>앱 내 광고 게재·성과 측정</td><td>광고 요청 시 네트워크를 통한 전송</td><td>Google 개인정보처리방침에 따름</td></tr>
+          <tr><td>Google LLC</td><td>미국</td><td>기기 푸시 토큰</td><td>푸시 알림 발송(FCM)</td><td>알림 발송 시</td><td>토큰 삭제 또는 회원 탈퇴 시까지</td></tr>
+          <tr><td>Apple Inc.</td><td>미국</td><td>기기 푸시 토큰, 구독 영수증</td><td>푸시 알림 발송 및 구독 검증</td><td>알림 발송·결제 시</td><td>처리 목적 달성 시까지</td></tr>
         </tbody>
       </table>
     </div>
+    <p>서비스의 서버 및 데이터베이스는 대한민국 내(네이버클라우드 플랫폼)에 위치하며,
+    이용자의 서비스 이용 데이터가 국외 서버에 상시 저장되지는 않습니다.</p>
+    <p>이용자는 국외 이전을 거부할 수 있으며, 거부 시 해당 기능(AI 맞춤 루틴 분석, 푸시 알림 등)의 이용이 제한될 수 있습니다.
+    광고 목적의 이전은 iOS 설정 &gt; 개인정보 보호 및 보안 &gt; 추적 에서 앱 추적을 허용하지 않음으로써 제한할 수 있습니다.
+    그 밖의 거부를 원하시는 경우 <a href="mailto:contact@routiner.app">contact@routiner.app</a>으로 요청하시기 바랍니다.</p>
   </section>
 
   <section class="art" id="s8">
@@ -189,12 +219,27 @@
     <ul>
       <li><strong>인증 토큰(JWT)</strong> — 로그인 상태 유지를 위해 기기의 보안 저장소(expo-secure-store)에 암호화되어 저장됩니다.</li>
       <li><strong>기기 식별자</strong> — 푸시 알림 발송 및 오류 분석을 위해 사용됩니다.</li>
+      <li><strong>광고 식별자(IDFA)</strong> — 이용자가 앱 추적을 허용한 경우에 한해 맞춤형 광고 제공 및 광고 성과 측정에 사용됩니다.
+      iOS 설정 &gt; 개인정보 보호 및 보안 &gt; 추적 에서 언제든지 허용을 철회할 수 있으며, 철회하더라도 맞춤형이 아닌 일반 광고는 계속 표시됩니다.</li>
     </ul>
     <p>이용자는 앱에서 로그아웃하거나 앱을 삭제함으로써 기기에 저장된 인증 토큰을 제거할 수 있습니다.</p>
   </section>
 
   <section class="art" id="s9">
-    <h2 class="art-title"><span class="art-no">9</span>광고 및 제휴 (쿠팡 파트너스)</h2>
+    <h2 class="art-title"><span class="art-no">9</span>광고 및 제휴</h2>
+    <h3>(1) 앱 내 광고</h3>
+    <p>무료 이용자에게는 Google AdMob 을 통해 앱 내 광고가 표시됩니다.</p>
+    <ul>
+      <li><strong>배너 광고</strong> — 홈, 영양제, 인사이트, 내 정보 화면 하단</li>
+      <li><strong>리워드 광고</strong> — 무료 등록 한도를 초과해 영양제를 추가할 때, 이용자가 스스로 시청을 선택한 경우에만 표시</li>
+      <li>광고 게재를 위해 Google 은 광고 식별자(IDFA)와 기기·네트워크 정보를 수집·이용할 수 있습니다.</li>
+      <li>iOS 14.5 이상에서는 앱 최초 실행 시 추적 허용 여부를 묻습니다(App Tracking Transparency).
+      허용하지 않아도 광고는 표시되며, 맞춤형이 아닌 일반 광고로 제공됩니다.</li>
+      <li><strong>Plus 구독 이용자에게는 앱 내 광고가 표시되지 않습니다.</strong></li>
+      <li>Google 의 광고 데이터 처리에 관한 자세한 내용은
+      <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>을 참고하시기 바랍니다.</li>
+    </ul>
+    <h3>(2) 쿠팡 파트너스</h3>
     <div class="notice">
       <p>본 서비스의 일부 화면에는 쿠팡 파트너스 활동의 일환으로 제휴 링크가 포함될 수 있으며,
       이용자가 해당 링크를 통해 구매할 경우 운영자가 이에 따른 일정액의 수수료를 제공받습니다.</p>
@@ -209,11 +254,11 @@
   <section class="art" id="s10">
     <h2 class="art-title"><span class="art-no">10</span>AI 서비스에 관한 고지</h2>
     <div class="notice">
-      <p><strong>AI 비교분석 결과는 참고 정보이며, 의료행위·진단·처방·치료를 대체하지 않습니다.</strong></p>
+      <p><strong>AI 맞춤 루틴 분석 결과는 참고 정보이며, 의료행위·진단·처방·치료를 대체하지 않습니다.</strong></p>
       <p>건강 상태, 복용 중인 약물과의 상호작용, 부작용 등 건강과 관련된 판단이 필요한 경우
       반드시 의사·약사 등 전문가와 상담하시기 바랍니다.</p>
     </div>
-    <p>AI 비교분석은 OpenAI 및 Anthropic의 언어모델을 활용하여 생성되며, 그 결과의 정확성·완전성을
+    <p>AI 맞춤 루틴 분석은 Anthropic 의 언어모델을 활용하여 생성되며, 그 결과의 정확성·완전성을
     보증하지 않습니다. 운영자는 AI가 생성한 정보에 의존한 이용자의 판단에 대해 책임을 지지 않습니다.</p>
   </section>
 
@@ -288,7 +333,7 @@
   </section>
 
   <footer class="doc-foot">
-    포루틴 · Forutin — 개인정보처리방침 · 시행일 2026년 7월 8일<br>
+    포루틴 · Forutin — 개인정보처리방침 · 시행일 2026년 8월 1일<br>
     <a href="/">홈</a> · <a href="/terms/">이용약관</a> · <a href="/privacy/en/">English</a> ·
     <a href="mailto:contact@routiner.app">contact@routiner.app</a>
   </footer>
