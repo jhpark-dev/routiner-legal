@@ -17,7 +17,7 @@
     <a href="/" class="brand"><span class="dot"></span> Forutin</a>
     <h1 class="doc-title">Privacy Policy</h1>
     <div class="doc-meta">
-      <strong>Effective date</strong> August 1, 2026 · <strong>First issued</strong> July 8, 2026<br>
+      <strong>Effective date</strong> August 2, 2026 · <strong>First issued</strong> July 8, 2026<br>
       Forutin (the &ldquo;Service&rdquo;) values your privacy and complies with applicable laws, including the
       Personal Information Protection Act (개인정보 보호법) of the Republic of Korea.
     </div>
@@ -64,7 +64,7 @@
       <li><strong>Service delivery</strong> — vitamin/supplement management, intake reminders, and inventory tracking.</li>
       <li><strong>Subscription billing &amp; refunds</strong> — verifying Plus subscription status, renewals, cancellations, and refunds.</li>
       <li><strong>AI routine analysis</strong> — generating AI analysis of intake timing and combinations based on the supplements you register.</li>
-      <li><strong>Advertising</strong> — displaying in-app ads (banner and rewarded) to free users, and serving personalized ads where you have allowed app tracking.</li>
+      <li><strong>Advertising</strong> — displaying in-app ads (banner and rewarded) to free users. All ads are non-personalized and we do not track you.</li>
       <li><strong>Community board</strong> — handling posts, inquiries, and replies.</li>
       <li><strong>Improvement &amp; analytics</strong> — improving features, diagnosing errors, and producing usage statistics. Usage records collected for this purpose are stored and analyzed in a form linked to your account.</li>
       <li><strong>Customer support</strong> — handling inquiries and complaints and replying with the outcome.</li>
@@ -82,7 +82,7 @@
           <tr><td>Optional</td><td>Marketing communications consent</td><td>Chosen by you at sign-up</td></tr>
           <tr><td>Generated in use</td><td>Registered vitamins/supplements, intake records, inventory, notification settings, subscription status, board posts and comments, in-app event records (screen views, feature usage, subscription conversion, etc.)</td><td>Created as you use the Service</td></tr>
           <tr><td>Automatically collected</td><td>Access logs, error logs, device identifier, push notification token, OS version, app version</td><td>Generated automatically during use</td></tr>
-          <tr><td>Automatically collected for advertising</td><td>Advertising identifier (IDFA), device and network information, ad impression and click records</td><td>Collected via the advertising SDK (Google AdMob) where you have allowed app tracking (see Section 9)</td></tr>
+          <tr><td>Automatically collected for advertising</td><td>Device and network information, ad impression and click records</td><td>Collected via the advertising SDK (Google AdMob) to serve non-personalized ads. <strong>We do not collect the advertising identifier (IDFA)</strong> (see Section 9)</td></tr>
         </tbody>
       </table>
     </div>
@@ -131,7 +131,7 @@
         <thead><tr><th>Recipient</th><th>Purpose</th><th>Items</th></tr></thead>
         <tbody>
           <tr><td>Apple Inc. / Google LLC (once Android is supported)</td><td>In-app purchase (IAP) validation and subscription status</td><td>Subscription receipt, transaction identifier</td></tr>
-          <tr><td>Google LLC</td><td>Serving and measuring in-app ads (Google AdMob)</td><td>Advertising identifier (IDFA, where you allowed tracking), device and network information, ad impression and click records</td></tr>
+          <tr><td>Google LLC</td><td>Serving and measuring in-app ads (Google AdMob)</td><td>Device and network information, ad impression and click records (no advertising identifier)</td></tr>
         </tbody>
       </table>
     </div>
@@ -146,7 +146,7 @@
         <thead><tr><th>Processor</th><th>Task</th><th>Items processed</th></tr></thead>
         <tbody>
           <tr><td>Anthropic PBC (USA)</td><td>Processing AI routine analysis requests</td><td>Supplement name, ingredient, and intake timing details in your request</td></tr>
-          <tr><td>Google LLC (USA)</td><td>Serving and measuring in-app ads (Google AdMob)</td><td>Advertising identifier, device and network information</td></tr>
+          <tr><td>Google LLC (USA)</td><td>Serving and measuring in-app ads (Google AdMob)</td><td>Device and network information</td></tr>
           <tr><td>Google LLC (USA)</td><td>Push notifications (intake reminders) — Firebase Cloud Messaging</td><td>Device push token</td></tr>
           <tr><td>Apple Inc. (USA)</td><td>Push notifications (intake reminders) — APNs</td><td>Device push token</td></tr>
           <tr><td>NAVER Cloud Corp. (Republic of Korea)</td><td>Server operation and data storage</td><td>Service usage data, account identifiers</td></tr>
@@ -168,7 +168,7 @@
         <thead><tr><th>Recipient</th><th>Country</th><th>Items</th><th>Purpose</th><th>Method / timing</th><th>Retention</th></tr></thead>
         <tbody>
           <tr><td>Anthropic PBC</td><td>USA</td><td>Supplement/intake request details</td><td>Generating AI routine analysis results</td><td>Over the network when the feature is used</td><td>Immediately after processing, or per processor policy</td></tr>
-          <tr><td>Google LLC</td><td>USA</td><td>Advertising identifier, device and network information, ad impression and click records</td><td>Serving and measuring in-app ads</td><td>Over the network when an ad is requested</td><td>Per Google&rsquo;s privacy policy</td></tr>
+          <tr><td>Google LLC</td><td>USA</td><td>Device and network information, ad impression and click records</td><td>Serving and measuring in-app ads</td><td>Over the network when an ad is requested</td><td>Per Google&rsquo;s privacy policy</td></tr>
           <tr><td>Google LLC</td><td>USA</td><td>Device push token</td><td>Push notification delivery (FCM)</td><td>When a notification is sent</td><td>Until the token is deleted or your account is closed</td></tr>
           <tr><td>Apple Inc.</td><td>USA</td><td>Device push token, subscription receipt</td><td>Push notification delivery and subscription validation</td><td>When a notification is sent or a payment occurs</td><td>Until the purpose is fulfilled</td></tr>
         </tbody>
@@ -177,8 +177,7 @@
     <p>The Service&rsquo;s servers and databases are located in the Republic of Korea (NAVER Cloud Platform);
     your service usage data is not stored on overseas servers on an ongoing basis.</p>
     <p>You may refuse international transfer; however, refusal may limit related features (such as AI routine
-    analysis and push notifications). Transfers for advertising purposes can be limited by not allowing app
-    tracking under iOS Settings &gt; Privacy &amp; Security &gt; Tracking. For other objections, contact
+    analysis and push notifications). For objections, contact
     <a href="mailto:contact@routiner.app">contact@routiner.app</a>.</p>
   </section>
 
@@ -189,9 +188,8 @@
     <ul>
       <li><strong>Authentication token (JWT)</strong> — stored encrypted in the device secure storage (expo-secure-store) to maintain your login session.</li>
       <li><strong>Device identifier</strong> — used to deliver push notifications and analyze errors.</li>
-      <li><strong>Advertising identifier (IDFA)</strong> — used to serve personalized ads and measure ad performance,
-      only where you have allowed app tracking. You can withdraw permission at any time under iOS Settings &gt;
-      Privacy &amp; Security &gt; Tracking; non-personalized ads will still be shown after withdrawal.</li>
+      <li><strong>Advertising identifier (IDFA)</strong> — we do not collect or use the advertising identifier.
+      The app does not request tracking permission (App Tracking Transparency), and all ads are non-personalized.</li>
     </ul>
     <p>You can remove the stored authentication token by logging out or uninstalling the app.</p>
   </section>
@@ -203,9 +201,9 @@
     <ul>
       <li><strong>Banner ads</strong> — at the bottom of the Home, Supplements, Insights, and My Page screens.</li>
       <li><strong>Rewarded ads</strong> — shown only when you choose to watch one in order to add a supplement beyond the free registration limit.</li>
-      <li>To serve ads, Google may collect and use your advertising identifier (IDFA) and device and network information.</li>
-      <li>On iOS 14.5 and later, the app asks for tracking permission on first launch (App Tracking Transparency).
-      Ads are shown whether or not you allow it; if you decline, they are non-personalized.</li>
+      <li><strong>Forutin serves non-personalized ads only, to every user.</strong> We do not collect the advertising identifier (IDFA) and we do not track you.</li>
+      <li>Accordingly, the app does not request tracking permission (App Tracking Transparency).</li>
+      <li>To serve ads, Google may collect and use device and network information.</li>
       <li><strong>Plus subscribers are not shown in-app ads.</strong></li>
       <li>For details on how Google processes advertising data, see the
       <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
@@ -309,7 +307,7 @@
   </section>
 
   <footer class="doc-foot">
-    Forutin — Privacy Policy · Effective August 1, 2026<br>
+    Forutin — Privacy Policy · Effective August 2, 2026<br>
     <a href="/">Home</a> · <a href="/terms/en/">Terms of Service</a> · <a href="/privacy/">한국어</a> ·
     <a href="mailto:contact@routiner.app">contact@routiner.app</a>
   </footer>
